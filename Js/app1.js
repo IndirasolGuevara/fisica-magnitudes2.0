@@ -1,7 +1,7 @@
 // Función para convertir unidades de longitud
 //crea la funcion con las 3 variables
 function convertirLongitud(valor, unidadDeEntrada, unidadDeSalida) { 
-
+    var numero1=parseInt( document.getElementById("input-respuesta").value);
     // Realizar la conversión
     //la constante resultado es igual al valor (numero aleatorio) * (la unidad selecionada aleatoriamente)
     //en el diccionario relaciones dividido la unidad de salida aleatoria encontrada en
@@ -44,7 +44,7 @@ function convertirLongitud(valor, unidadDeEntrada, unidadDeSalida) {
   while (unidadDeSalida === unidadDeEntrada) {
     //se vuelve a generar y se edita la variable hasta que sean distintas
     unidadDeSalida = obtenerUnidadAleatoria();
-  }
+  }  
   
   // Generar un número aleatorio para la conversión
   const numeroAleatorio = generarNumeroAleatorio();
@@ -54,11 +54,11 @@ function convertirLongitud(valor, unidadDeEntrada, unidadDeSalida) {
   const resultado = convertirLongitud(numeroAleatorio, unidadDeEntrada, unidadDeSalida);
   
   // Pide al usuario que convierta la unidad
-  const respuestaUsuario = parseFloat(prompt(`Convierte ${numeroAleatorio} ${unidadDeEntrada} a ${unidadDeSalida}:`));
+  const respuestaUsuario = parseFloat(document.getElementById("pedido").innerHTML("hola")); //.innerHTML(`Convierte ${numeroAleatorio} ${unidadDeEntrada} a ${unidadDeSalida}:`));
   
   // Verificar si la respuesta del usuario es correcta
   if (respuestaUsuario == resultado) {
-    alert("¡Respuesta correcta!");
+    document.getElementById('correcto').innerHTML="Respuesta correcta";
   } else {
-    alert(`Respuesta incorrecta. La respuesta correcta es ${resultado}`);
+    document.getElementById('incorrecto').innerHTML="Respuesta incorrecta";
   }

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/Css/style.css">
-    <script src="../Juego Magnitudes/Js/app1.js">Script</script>
+    <link rel="stylesheet" href="./Css/style.css">
+  
 </head>
 <body>
     <header>
@@ -18,24 +18,20 @@
         </div>
         <div class="p-respuesta">
             <p id="respuesta1"></p>
-            <p id="respuesta2"></p>
-            <p id="respuesta3"></p>
-            <p id="respuesta4"></p>
-            <p id="respuesta5"></p>
-            <p id="respuesta6"></p>
-            <p id="respuesta7"></p>
-        </div> 
+        </div>  
+         <p id="pedido"></p> 
         <div class="respuesta-input">
-            <p id="pregunta-respuesta"></p>
+         
             <input id="input-respuesta" type="text"><br>
-            <button><img class="img-input-regla" width="300px" height="50px" src="./img/regla.png" alt="" ></button>
+            <button onclick="convertirLongitud() ,obtenerUnidadAleatoria(),generarNumeroAleatorio()"><img class="img-input-regla" width="300px" height="50px" src="./img/regla.png" alt="" ></button>
             <p id="correcto"></p>
             <p id="incorrecto"></p>
         </div>   
         <div class="img-escalera">
             <img src="./img/escala_m_escalera.png" width="400px" alt="">
         </div>
-    </section>   
+    </section>
+    <script src="./Js/app1.js"></script>  
     
 </body>
 </html>
