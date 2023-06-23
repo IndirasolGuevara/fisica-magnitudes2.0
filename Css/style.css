@@ -1,0 +1,55 @@
+ body{
+    background-image: url(../img/fondo\ mat.png);
+    background-image: 
+    linear-gradient(
+      rgba(181, 248, 203, 0.5),
+      rgba(171, 247, 218, 0.5)
+    ),
+    url(../img/fondo\ mat.png);
+ }
+ .imagen-regla{
+    transform: rotate(135deg);
+ }
+ section{
+    display: flex;
+    margin-top: 90px;
+ }
+
+ h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+ }
+ .img-escalera{
+    margin-top: 10px;
+    margin-left: 350px;
+ }
+ .imagen-regla{
+    margin-left: -50px;
+    margin-right: -80px;
+ }
+ .p-respuesta{
+    margin-right: 120px;
+ }
+ .respuesta-input{
+    margin-right: -180px;
+ }
+ input{
+    width: 280px;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+
+ }
+ .img-input-regla{
+    margin-top: -80;
+ }
+ header{
+    padding: 10px;
+ }
+ button{
+    padding: 0%;
+ }
+ .respuesta-input{
+    margin-right: -210px;
+ }
